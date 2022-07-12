@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/packages/tstl-program"
+  },
+  "include": ["./src/**/*.ts"],
+
+  "tstl": {
+    "luaBundle": "main.lua", // Will bundle all output Lua files into a single file.
+    "luaBundleEntry": "./src/main.ts"
+  }
+}
